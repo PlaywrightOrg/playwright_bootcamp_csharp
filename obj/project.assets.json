@@ -1,8 +1,8 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {
-      "coverlet.collector/6.0.0": {
+    "net7.0": {
+      "coverlet.collector/3.2.0": {
         "type": "package",
         "build": {
           "build/netstandard1.0/coverlet.collector.targets": {}
@@ -21,7 +21,7 @@
           }
         }
       },
-      "Microsoft.CodeCoverage/17.6.0": {
+      "Microsoft.CodeCoverage/17.7.1": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
@@ -34,11 +34,11 @@
           "build/netstandard2.0/Microsoft.CodeCoverage.targets": {}
         }
       },
-      "Microsoft.NET.Test.Sdk/17.6.0": {
+      "Microsoft.NET.Test.Sdk/17.7.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CodeCoverage": "17.6.0",
-          "Microsoft.TestPlatform.TestHost": "17.6.0"
+          "Microsoft.CodeCoverage": "17.7.1",
+          "Microsoft.TestPlatform.TestHost": "17.7.1"
         },
         "compile": {
           "lib/netcoreapp3.1/_._": {}
@@ -63,7 +63,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Playwright/1.46.0": {
+      "Microsoft.Playwright/1.45.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
@@ -84,12 +84,12 @@
           "buildTransitive/Microsoft.Playwright.targets": {}
         }
       },
-      "Microsoft.Playwright.NUnit/1.46.0": {
+      "Microsoft.Playwright.NUnit/1.45.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "16.11.0",
-          "Microsoft.Playwright": "1.46.0",
-          "Microsoft.Playwright.TestAdapter": "1.46.0",
+          "Microsoft.Playwright": "1.45.0",
+          "Microsoft.Playwright.TestAdapter": "1.45.0",
           "NUnit": "3.13.2",
           "NUnit3TestAdapter": "4.0.0"
         },
@@ -104,10 +104,10 @@
           }
         }
       },
-      "Microsoft.Playwright.TestAdapter/1.46.0": {
+      "Microsoft.Playwright.TestAdapter/1.45.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Playwright": "1.46.0",
+          "Microsoft.Playwright": "1.45.0",
           "Microsoft.TestPlatform.ObjectModel": "17.3.0"
         },
         "compile": {
@@ -117,10 +117,10 @@
           "lib/netstandard2.0/Microsoft.Playwright.TestAdapter.dll": {}
         }
       },
-      "Microsoft.TestPlatform.ObjectModel/17.6.0": {
+      "Microsoft.TestPlatform.ObjectModel/17.7.1": {
         "type": "package",
         "dependencies": {
-          "NuGet.Frameworks": "5.11.0",
+          "NuGet.Frameworks": "6.5.0",
           "System.Reflection.Metadata": "1.6.0"
         },
         "compile": {
@@ -214,10 +214,10 @@
           }
         }
       },
-      "Microsoft.TestPlatform.TestHost/17.6.0": {
+      "Microsoft.TestPlatform.TestHost/17.7.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.TestPlatform.ObjectModel": "17.6.0",
+          "Microsoft.TestPlatform.ObjectModel": "17.7.1",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
@@ -395,17 +395,13 @@
           }
         }
       },
-      "NuGet.Frameworks/5.11.0": {
+      "NuGet.Frameworks/6.5.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/NuGet.Frameworks.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/NuGet.Frameworks.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/NuGet.Frameworks.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/NuGet.Frameworks.dll": {}
         }
       },
       "NUnit/3.13.3": {
@@ -430,10 +426,10 @@
       "NUnit.Analyzers/3.6.1": {
         "type": "package"
       },
-      "NUnit3TestAdapter/4.2.1": {
+      "NUnit3TestAdapter/4.4.2": {
         "type": "package",
         "build": {
-          "build/netcoreapp2.1/NUnit3TestAdapter.props": {}
+          "build/netcoreapp3.1/NUnit3TestAdapter.props": {}
         }
       },
       "System.ComponentModel.Annotations/5.0.0": {
@@ -526,10 +522,10 @@
     }
   },
   "libraries": {
-    "coverlet.collector/6.0.0": {
-      "sha512": "tW3lsNS+dAEII6YGUX/VMoJjBS1QvsxqJeqLaJXub08y1FSjasFPtQ4UBUsudE9PNrzLjooClMsPtY2cZLdXpQ==",
+    "coverlet.collector/3.2.0": {
+      "sha512": "xjY8xBigSeWIYs4I7DgUHqSNoGqnHi7Fv7/7RZD02rvZyG3hlsjnQKiVKVWKgr9kRKgmV+dEfu8KScvysiC0Wg==",
       "type": "package",
-      "path": "coverlet.collector/6.0.0",
+      "path": "coverlet.collector/3.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -575,7 +571,7 @@
         "build/netstandard1.0/coverlet.core.dll",
         "build/netstandard1.0/coverlet.core.pdb",
         "coverlet-icon.png",
-        "coverlet.collector.6.0.0.nupkg.sha512",
+        "coverlet.collector.3.2.0.nupkg.sha512",
         "coverlet.collector.nuspec"
       ]
     },
@@ -600,10 +596,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.CodeCoverage/17.6.0": {
-      "sha512": "5v2GwzpR7JEuQUzupjx3zLwn2FutADW/weLzLt726DR3WXxsM+ICPoJG6pxuKFsumtZp890UrVuudTUhsE8Qyg==",
+    "Microsoft.CodeCoverage/17.7.1": {
+      "sha512": "NmGwM2ZJy4CAMdJYIp53opUjnXsMbzASX5oQzgxORicJsgz5Lp50fnRI8OmQ/kYNg6dHfr3IjuUoXbsotDX+KA==",
       "type": "package",
-      "path": "microsoft.codecoverage/17.6.0",
+      "path": "microsoft.codecoverage/17.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -662,14 +658,14 @@
         "build/netstandard2.0/zh-Hant/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
         "lib/net462/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
         "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
-        "microsoft.codecoverage.17.6.0.nupkg.sha512",
+        "microsoft.codecoverage.17.7.1.nupkg.sha512",
         "microsoft.codecoverage.nuspec"
       ]
     },
-    "Microsoft.NET.Test.Sdk/17.6.0": {
-      "sha512": "tHyg4C6c89QvLv6Utz3xKlba4EeoyJyIz59Q1NrjRENV7gfGnSE6I+sYPIbVOzQttoo2zpHDgOK/p6Hw2OlD7A==",
+    "Microsoft.NET.Test.Sdk/17.7.1": {
+      "sha512": "o1qyqDOR8eMuQrC1e5EMMcE+Wm3rwES5aHNWaJpi2A5qwVOru23zsdXkndT6hgl79QsJsqKp+/RNcayIzpHjvA==",
       "type": "package",
-      "path": "microsoft.net.test.sdk/17.6.0",
+      "path": "microsoft.net.test.sdk/17.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -685,7 +681,7 @@
         "buildMultiTargeting/Microsoft.NET.Test.Sdk.props",
         "lib/net462/_._",
         "lib/netcoreapp3.1/_._",
-        "microsoft.net.test.sdk.17.6.0.nupkg.sha512",
+        "microsoft.net.test.sdk.17.7.1.nupkg.sha512",
         "microsoft.net.test.sdk.nuspec"
       ]
     },
@@ -704,10 +700,10 @@
         "runtime.json"
       ]
     },
-    "Microsoft.Playwright/1.46.0": {
-      "sha512": "hf7eInNevQTFGdrq+iJI0ddUyvEDu0ENMw4eoCxiwsMaCsvhJ0/E8rHrCBFrc2JoUh2BQuASQYagToy7XvyQFA==",
+    "Microsoft.Playwright/1.45.0": {
+      "sha512": "+PJ5NM2KHQJhWiMlyBUpWYbJ5EkXcUwCmm5N91tPwXcwm29GHIO5CTPDsy9TRGwlBpQChvsMCLAWjn4IVd2w8w==",
       "type": "package",
-      "path": "microsoft.playwright/1.46.0",
+      "path": "microsoft.playwright/1.45.0",
       "files": [
         ".nupkg.metadata",
         ".playwright/node/LICENSE",
@@ -716,6 +712,8 @@
         ".playwright/node/linux-arm64/node",
         ".playwright/node/linux-x64/node",
         ".playwright/node/win32_x64/node.exe",
+        ".playwright/package/LICENSE",
+        ".playwright/package/NOTICE",
         ".playwright/package/README.md",
         ".playwright/package/ThirdPartyNotices.txt",
         ".playwright/package/api.json",
@@ -737,9 +735,6 @@
         ".playwright/package/bin/reinstall_msedge_stable_linux.sh",
         ".playwright/package/bin/reinstall_msedge_stable_mac.sh",
         ".playwright/package/bin/reinstall_msedge_stable_win.ps1",
-        ".playwright/package/bin/socks-certs/README.md",
-        ".playwright/package/bin/socks-certs/cert.pem",
-        ".playwright/package/bin/socks-certs/key.pem",
         ".playwright/package/browsers.json",
         ".playwright/package/cli.js",
         ".playwright/package/index.d.ts",
@@ -923,7 +918,6 @@
         ".playwright/package/lib/server/registry/oopDownloadBrowserMain.js",
         ".playwright/package/lib/server/screenshotter.js",
         ".playwright/package/lib/server/selectors.js",
-        ".playwright/package/lib/server/socksClientCertificatesInterceptor.js",
         ".playwright/package/lib/server/socksInterceptor.js",
         ".playwright/package/lib/server/trace/recorder/snapshotter.js",
         ".playwright/package/lib/server/trace/recorder/snapshotterInjected.js",
@@ -964,12 +958,12 @@
         ".playwright/package/lib/utils/isomorphic/locatorGenerators.js",
         ".playwright/package/lib/utils/isomorphic/locatorParser.js",
         ".playwright/package/lib/utils/isomorphic/locatorUtils.js",
-        ".playwright/package/lib/utils/isomorphic/mimeType.js",
         ".playwright/package/lib/utils/isomorphic/selectorParser.js",
         ".playwright/package/lib/utils/isomorphic/stringUtils.js",
         ".playwright/package/lib/utils/isomorphic/traceUtils.js",
         ".playwright/package/lib/utils/linuxUtils.js",
         ".playwright/package/lib/utils/manualPromise.js",
+        ".playwright/package/lib/utils/mimeType.js",
         ".playwright/package/lib/utils/multimap.js",
         ".playwright/package/lib/utils/network.js",
         ".playwright/package/lib/utils/processLauncher.js",
@@ -990,32 +984,28 @@
         ".playwright/package/lib/utilsBundleImpl/index.js",
         ".playwright/package/lib/utilsBundleImpl/xdg-open",
         ".playwright/package/lib/vite/htmlReport/index.html",
-        ".playwright/package/lib/vite/recorder/assets/codeMirrorModule-CLVU69JM.js",
+        ".playwright/package/lib/vite/recorder/assets/codeMirrorModule-Bzggq412.js",
         ".playwright/package/lib/vite/recorder/assets/codeMirrorModule-ez37Vkbh.css",
         ".playwright/package/lib/vite/recorder/assets/codicon-DMa5iZz2.ttf",
-        ".playwright/package/lib/vite/recorder/assets/index-C26qYYLF.css",
-        ".playwright/package/lib/vite/recorder/assets/index-CicNBMuh.js",
+        ".playwright/package/lib/vite/recorder/assets/index-5SSs4-n_.js",
+        ".playwright/package/lib/vite/recorder/assets/index-B5iDPo7P.css",
         ".playwright/package/lib/vite/recorder/index.html",
         ".playwright/package/lib/vite/recorder/playwright-logo.svg",
-        ".playwright/package/lib/vite/traceViewer/assets/codeMirrorModule-Bhx_foC8.js",
-        ".playwright/package/lib/vite/traceViewer/assets/testServerConnection-D2nmasS1.js",
-        ".playwright/package/lib/vite/traceViewer/assets/workbench-NhP651gz.js",
+        ".playwright/package/lib/vite/traceViewer/assets/codeMirrorModule-BfR9u_dG.js",
+        ".playwright/package/lib/vite/traceViewer/assets/testServerConnection-CLJOcN3M.js",
         ".playwright/package/lib/vite/traceViewer/assets/xtermModule-BeNbaIVa.js",
         ".playwright/package/lib/vite/traceViewer/codeMirrorModule.ez37Vkbh.css",
         ".playwright/package/lib/vite/traceViewer/codicon.DMa5iZz2.ttf",
-        ".playwright/package/lib/vite/traceViewer/embedded.Rs3k5vqi.js",
-        ".playwright/package/lib/vite/traceViewer/embedded.html",
-        ".playwright/package/lib/vite/traceViewer/embedded.w7WN2u1R.css",
         ".playwright/package/lib/vite/traceViewer/index.CrbWWHbf.css",
-        ".playwright/package/lib/vite/traceViewer/index.DMistyfh.js",
+        ".playwright/package/lib/vite/traceViewer/index.D7JIa5vL.js",
         ".playwright/package/lib/vite/traceViewer/index.html",
         ".playwright/package/lib/vite/traceViewer/playwright-logo.svg",
         ".playwright/package/lib/vite/traceViewer/snapshot.html",
         ".playwright/package/lib/vite/traceViewer/sw.bundle.js",
-        ".playwright/package/lib/vite/traceViewer/uiMode.D3cNFP6u.css",
-        ".playwright/package/lib/vite/traceViewer/uiMode.DF8Bmr4C.js",
+        ".playwright/package/lib/vite/traceViewer/testServerConnection.0WapKERv.css",
+        ".playwright/package/lib/vite/traceViewer/uiMode.Btn2TM9w.css",
+        ".playwright/package/lib/vite/traceViewer/uiMode.DGx1ltIi.js",
         ".playwright/package/lib/vite/traceViewer/uiMode.html",
-        ".playwright/package/lib/vite/traceViewer/workbench.CT98hyla.css",
         ".playwright/package/lib/vite/traceViewer/xtermModule.DSXBckUd.css",
         ".playwright/package/lib/zipBundle.js",
         ".playwright/package/lib/zipBundleImpl.js",
@@ -1032,14 +1022,14 @@
         "icon.png",
         "lib/netstandard2.0/Microsoft.Playwright.dll",
         "lib/netstandard2.0/Microsoft.Playwright.xml",
-        "microsoft.playwright.1.46.0.nupkg.sha512",
+        "microsoft.playwright.1.45.0.nupkg.sha512",
         "microsoft.playwright.nuspec"
       ]
     },
-    "Microsoft.Playwright.NUnit/1.46.0": {
-      "sha512": "EBxa5tMcZI3dtuaCfoJ44mrlsvL+ZXjF5yrzQicFEHcG4C1l6jnl3jD1yKQCBgJH5f2jKzACi0ir8tkCqxBwVA==",
+    "Microsoft.Playwright.NUnit/1.45.0": {
+      "sha512": "2mH+/+YirBOqJXq4LnEDfm6ZdYic4rLq9z3fYWc08DQ9ZyChZzU19PdfboZcBCr4dO+Zfk8EYG8M0Deu/O7FkA==",
       "type": "package",
-      "path": "microsoft.playwright.nunit/1.46.0",
+      "path": "microsoft.playwright.nunit/1.45.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1047,27 +1037,27 @@
         "lib/net462/Microsoft.Playwright.NUnit.dll",
         "lib/netcoreapp3.1/Microsoft.Playwright.NUnit.dll",
         "lib/netcoreapp3.1/Microsoft.Playwright.NUnit.runtimeconfig.json",
-        "microsoft.playwright.nunit.1.46.0.nupkg.sha512",
+        "microsoft.playwright.nunit.1.45.0.nupkg.sha512",
         "microsoft.playwright.nunit.nuspec"
       ]
     },
-    "Microsoft.Playwright.TestAdapter/1.46.0": {
-      "sha512": "BDKbbvw4XwpvTlSHYb4YeVImN+kf/mLu9CfKls/giRKMyKNdo0qqJnX2JONQ3uI0hCqPt2gjflBMrrxaJgLkNA==",
+    "Microsoft.Playwright.TestAdapter/1.45.0": {
+      "sha512": "PDyqkd/tyb5+46ldAkM68UBRnJT6rtBSECiTuCAvebM2ImBUYxvNK1pQuLGxgzjpLlfHbBisI3TeEdD5Skvj3g==",
       "type": "package",
-      "path": "microsoft.playwright.testadapter/1.46.0",
+      "path": "microsoft.playwright.testadapter/1.45.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.png",
         "lib/netstandard2.0/Microsoft.Playwright.TestAdapter.dll",
-        "microsoft.playwright.testadapter.1.46.0.nupkg.sha512",
+        "microsoft.playwright.testadapter.1.45.0.nupkg.sha512",
         "microsoft.playwright.testadapter.nuspec"
       ]
     },
-    "Microsoft.TestPlatform.ObjectModel/17.6.0": {
-      "sha512": "AA/rrf5zwC5/OBLEOajkhjbVTM3SvxRXy8kcQ8e4mJKojbyZvqqhpfNg362N9vXU94DLg9NUTFOAnoYVT0pTJw==",
+    "Microsoft.TestPlatform.ObjectModel/17.7.1": {
+      "sha512": "nDmV03yHIdAiG5J3ZEjMyJM2XDjmWORuKgbrGzqlAipBEjUuy5Z5S7WwSqUv9OiaUrtCn9dNYmjfMELUi08leQ==",
       "type": "package",
-      "path": "microsoft.testplatform.objectmodel/17.6.0",
+      "path": "microsoft.testplatform.objectmodel/17.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1160,14 +1150,14 @@
         "lib/netstandard2.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "microsoft.testplatform.objectmodel.17.6.0.nupkg.sha512",
+        "microsoft.testplatform.objectmodel.17.7.1.nupkg.sha512",
         "microsoft.testplatform.objectmodel.nuspec"
       ]
     },
-    "Microsoft.TestPlatform.TestHost/17.6.0": {
-      "sha512": "7YdgUcIeCPVKLC7n7LNKDiEHWc7z3brkkYPdUbDnFsvf6WvY9UfzS0VSUJ8P2NgN0CDSD223GCJFSjSBLZRqOQ==",
+    "Microsoft.TestPlatform.TestHost/17.7.1": {
+      "sha512": "WCU1NyBarz0tih+I9K5OWN1dVo3z562Iek/VAqWNWRFWw1GeUGqB61iixrBvZO77sjTtBc1cXO8H95uImfmEdw==",
       "type": "package",
-      "path": "microsoft.testplatform.testhost/17.6.0",
+      "path": "microsoft.testplatform.testhost/17.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1230,7 +1220,7 @@
         "lib/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
         "lib/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
         "lib/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "microsoft.testplatform.testhost.17.6.0.nupkg.sha512",
+        "microsoft.testplatform.testhost.17.7.1.nupkg.sha512",
         "microsoft.testplatform.testhost.nuspec"
       ]
     },
@@ -1391,21 +1381,18 @@
         "packageIcon.png"
       ]
     },
-    "NuGet.Frameworks/5.11.0": {
-      "sha512": "eaiXkUjC4NPcquGWzAGMXjuxvLwc6XGKMptSyOGQeT0X70BUZObuybJFZLA0OfTdueLd3US23NBPTBb6iF3V1Q==",
+    "NuGet.Frameworks/6.5.0": {
+      "sha512": "QWINE2x3MbTODsWT1Gh71GaGb5icBz4chS8VYvTgsBnsi8esgN6wtHhydd7fvToWECYGq7T4cgBBDiKD/363fg==",
       "type": "package",
-      "path": "nuget.frameworks/5.11.0",
+      "path": "nuget.frameworks/6.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "README.md",
         "icon.png",
-        "lib/net40/NuGet.Frameworks.dll",
-        "lib/net40/NuGet.Frameworks.xml",
         "lib/net472/NuGet.Frameworks.dll",
-        "lib/net472/NuGet.Frameworks.xml",
         "lib/netstandard2.0/NuGet.Frameworks.dll",
-        "lib/netstandard2.0/NuGet.Frameworks.xml",
-        "nuget.frameworks.5.11.0.nupkg.sha512",
+        "nuget.frameworks.6.5.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
       ]
     },
@@ -1451,29 +1438,31 @@
         "tools/uninstall.ps1"
       ]
     },
-    "NUnit3TestAdapter/4.2.1": {
-      "sha512": "kgH8VKsrcZZgNGQXRpVCrM7TnNz9li3b/snH+YmnXUNqsaWa1Xw9EQWHpbzq4Li2FbTjTE/E5N5HdLNXzZ8BpQ==",
+    "NUnit3TestAdapter/4.4.2": {
+      "sha512": "vA/iHYcR+LYw+pRWQugckC/zW2fXHaqMr2uA82NOBt8v4YK4wMJrQ7QC8XLc7PjetEZ96cPbBTWsDDtmQiRZTA==",
       "type": "package",
-      "path": "nunit3testadapter/4.2.1",
+      "path": "nunit3testadapter/4.4.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "build/net35/NUnit3.TestAdapter.dll",
-        "build/net35/NUnit3.TestAdapter.pdb",
-        "build/net35/NUnit3TestAdapter.props",
-        "build/net35/nunit.engine.api.dll",
-        "build/net35/nunit.engine.core.dll",
-        "build/net35/nunit.engine.dll",
-        "build/net35/testcentric.engine.metadata.dll",
-        "build/netcoreapp2.1/NUnit3.TestAdapter.dll",
-        "build/netcoreapp2.1/NUnit3.TestAdapter.pdb",
-        "build/netcoreapp2.1/NUnit3TestAdapter.props",
-        "build/netcoreapp2.1/nunit.engine.api.dll",
-        "build/netcoreapp2.1/nunit.engine.core.dll",
-        "build/netcoreapp2.1/nunit.engine.dll",
-        "build/netcoreapp2.1/testcentric.engine.metadata.dll",
-        "nunit3testadapter.4.2.1.nupkg.sha512",
-        "nunit3testadapter.nuspec"
+        "build/net462/NUnit3.TestAdapter.dll",
+        "build/net462/NUnit3.TestAdapter.pdb",
+        "build/net462/NUnit3TestAdapter.props",
+        "build/net462/nunit.engine.api.dll",
+        "build/net462/nunit.engine.core.dll",
+        "build/net462/nunit.engine.dll",
+        "build/net462/testcentric.engine.metadata.dll",
+        "build/netcoreapp3.1/NUnit3.TestAdapter.dll",
+        "build/netcoreapp3.1/NUnit3.TestAdapter.pdb",
+        "build/netcoreapp3.1/NUnit3TestAdapter.props",
+        "build/netcoreapp3.1/nunit.engine.api.dll",
+        "build/netcoreapp3.1/nunit.engine.core.dll",
+        "build/netcoreapp3.1/nunit.engine.dll",
+        "build/netcoreapp3.1/testcentric.engine.metadata.dll",
+        "docs/README.md",
+        "nunit3testadapter.4.4.2.nupkg.sha512",
+        "nunit3testadapter.nuspec",
+        "nunit_256.png"
       ]
     },
     "System.ComponentModel.Annotations/5.0.0": {
@@ -1695,40 +1684,41 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net8.0": [
-      "Microsoft.NET.Test.Sdk >= 17.6.0",
-      "Microsoft.Playwright.NUnit >= 1.46.0",
+    "net7.0": [
+      "Microsoft.NET.Test.Sdk >= 17.7.1",
+      "Microsoft.Playwright.NUnit >= 1.45.0",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.6.1",
-      "NUnit3TestAdapter >= 4.2.1",
-      "coverlet.collector >= 6.0.0"
+      "NUnit3TestAdapter >= 4.4.2",
+      "coverlet.collector >= 3.2.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LR585DG\\.nuget\\packages\\": {}
+    "C:\\Users\\EV941YM\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PlaywrightBootcampGitHubRepositories\\playwright_bootcamp_csharp\\playwright_bootcamp_csharp.csproj",
-      "projectName": "playwright_bootcamp_csharp",
-      "projectPath": "C:\\PlaywrightBootcampGitHubRepositories\\playwright_bootcamp_csharp\\playwright_bootcamp_csharp.csproj",
-      "packagesPath": "C:\\Users\\LR585DG\\.nuget\\packages\\",
-      "outputPath": "C:\\PlaywrightBootcampGitHubRepositories\\playwright_bootcamp_csharp\\obj\\",
+      "projectUniqueName": "C:\\testing\\PlaywrightCsharp\\nuevaClauJue\\PlaywrightDemo\\PlaywrightDemo.csproj",
+      "projectName": "PlaywrightDemo",
+      "projectPath": "C:\\testing\\PlaywrightCsharp\\nuevaClauJue\\PlaywrightDemo\\PlaywrightDemo.csproj",
+      "packagesPath": "C:\\Users\\EV941YM\\.nuget\\packages\\",
+      "outputPath": "C:\\testing\\PlaywrightCsharp\\nuevaClauJue\\PlaywrightDemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\LR585DG\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\EV941YM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net8.0"
+        "net7.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {},
-        "https://www.myget.org/F/workflow/": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "projectReferences": {}
         }
       },
@@ -1739,16 +1729,16 @@
       }
     },
     "frameworks": {
-      "net8.0": {
-        "targetAlias": "net8.0",
+      "net7.0": {
+        "targetAlias": "net7.0",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
-            "version": "[17.6.0, )"
+            "version": "[17.7.1, )"
           },
           "Microsoft.Playwright.NUnit": {
             "target": "Package",
-            "version": "[1.46.0, )"
+            "version": "[1.45.0, )"
           },
           "NUnit": {
             "target": "Package",
@@ -1760,11 +1750,11 @@
           },
           "NUnit3TestAdapter": {
             "target": "Package",
-            "version": "[4.2.1, )"
+            "version": "[4.4.2, )"
           },
           "coverlet.collector": {
             "target": "Package",
-            "version": "[6.0.0, )"
+            "version": "[3.2.0, )"
           }
         },
         "imports": [
@@ -1783,7 +1773,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
