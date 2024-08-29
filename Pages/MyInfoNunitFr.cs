@@ -8,7 +8,7 @@ public class MyInfoPageNunit
     private readonly ILocator _firstName;
     private readonly ILocator _middleName;
     private readonly ILocator _lastName;
-    
+
     private readonly ILocator _saveBtn;
     private readonly IPage _page;
 
@@ -28,9 +28,9 @@ public class MyInfoPageNunit
         _lastName = _page.GetByPlaceholder("Last Name");
 
         //_btnLogin = _page.GetByRole(AriaRole.Button, new PageGetByRoleOptions { Name = "Log in" });
-        //_saveBtn = _page.GetByRole(AriaRole.Button, new PageGetByRoleOptions { Name = " Save " }).First;
+        _saveBtn = _page.GetByRole(AriaRole.Button, new PageGetByRoleOptions { Name = " Save " }).First;
 
-        _saveBtn = _page.Locator("form").Filter(new() { HasText = "Employee Full NameEmployee" }).GetByRole(AriaRole.Button);
+        //_saveBtn = _page.Locator("form").Filter(new() { HasText = "Employee Full NameEmployee" }).GetByRole(AriaRole.Button);
 
 
         //await page.GetByPlaceholder("Username").FillAsync("Admin");
@@ -45,7 +45,7 @@ public class MyInfoPageNunit
 
     public async Task UpdatePersonalDetails(string userName, string userMiddleName, string userLastName) //send the personal info details.
     {
-        await _firstName.WaitForAsync();
+        //await _firstName.WaitForAsync();
         await _firstName.ClickAsync();
         await _firstName.FillAsync("");
         await _firstName.FillAsync(userName);
@@ -55,9 +55,21 @@ public class MyInfoPageNunit
         await _middleName.FillAsync(userMiddleName);
         await _lastName.FillAsync(userLastName);
         await _saveBtn.ClickAsync();
+        await _firstName.ClickAsync();
 
 
     }
+
+    public ILocator FirstNameSendLocator()
+    {
+
+        return _firstName;
+        //add row
+
+    }
+    public ILocator MiddleName => _middleName;
+
+}
 
 
 
