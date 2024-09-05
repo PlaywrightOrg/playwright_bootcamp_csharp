@@ -1,5 +1,6 @@
 ﻿using Microsoft.Playwright;
 using Microsoft.Playwright.NUnit;
+using System.Runtime.CompilerServices;
 
 namespace PlaywrightDemo.Pages;
 
@@ -11,6 +12,15 @@ public class MyInfoPageNunit
 
     private readonly ILocator _saveBtn;
     private readonly IPage _page;
+
+
+    private readonly ILocator _attachmenteBtn;
+
+    private readonly ILocator _browseAttachments;
+
+    private readonly ILocator _fileInput;   
+    private readonly ILocator _saveAttBtn;
+    private readonly ILocator _tablerows;
 
 
     public MyInfoPageNunit(IPage page)  ///here all the locators in the page.
@@ -37,6 +47,20 @@ public class MyInfoPageNunit
         // await page.GetByPlaceholder("Password").FillAsync("admin123");
 
         //await page.Locator("form").Filter(new() { HasText = "Employee Full NameEmployee" }).GetByRole(AriaRole.Button).ClickAsync();
+
+        _attachmenteBtn = _page.GetByRole(AriaRole.Button, new PageGetByRoleOptions { Name = " Add " });
+
+        _browseAttachments = _page.GetByText("Browse");
+
+        _fileInput = _page.Locator("input[type='file'].oxd-file-input");
+
+        _saveAttBtn = _page.GetByRole(AriaRole.Button, new() { Name = "Save" }).Nth(2);
+
+        _tablerows = _page.Locator(".oxd-table-body .oxd-table-card");
+
+
+
+
 
 
     }
@@ -68,6 +92,18 @@ public class MyInfoPageNunit
 
     }
     public ILocator MiddleName => _middleName;
+    public ILocator AddBtn => _attachmenteBtn;
+
+    public ILocator BrowseAttachments => _browseAttachments;
+
+    public ILocator FileInput => _fileInput;
+    public ILocator SaveAttBtn => _saveAttBtn;
+    // table, from parent to child..
+
+    public ILocator tableRows => _tablerows;
+
+
+
 
 }
 
@@ -77,4 +113,3 @@ public class MyInfoPageNunit
 
 
 
-}
