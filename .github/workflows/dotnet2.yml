@@ -36,7 +36,7 @@ jobs:
 
       # Compile project
       - name: Build the project
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build --configuration Release --no-restore PlaywrightDemo.sln 
 
       # Install Playwright browsers
       - name: Install Playwright CLI
@@ -50,4 +50,4 @@ jobs:
 
       # Executing the tests
       - name: Run Playwright tests
-        run: dotnet test PlaywrightDemo.sln --configuration Release --no-build
+        run: dotnet test --configuration Release --no-build PlaywrightDemo.sln
