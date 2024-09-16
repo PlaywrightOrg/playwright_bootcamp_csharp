@@ -11,6 +11,8 @@ public class MyInfoPage
     private readonly ILocator _saveBtn;
     private readonly IPage _page;
 
+   
+
   
     
 
@@ -27,6 +29,8 @@ public class MyInfoPage
 
         //_btnLogin = _page.GetByRole   (AriaRole.Button, new PageGetByRoleOptions { Name = "Log in" });
         _saveBtn = _page.GetByRole(AriaRole.Button, new PageGetByRoleOptions { Name = " Save " }).First;
+
+        
 
 
         

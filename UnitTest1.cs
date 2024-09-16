@@ -21,7 +21,8 @@ public class TestDs
         //playwright download
         using var playwright = await Playwright.CreateAsync();
         //browser
-        await using var browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
+        //await using var browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
+        await using var browser = await playwright["Firefox"].LaunchAsync(new BrowserTypeLaunchOptions
         {
             Headless = false,
 

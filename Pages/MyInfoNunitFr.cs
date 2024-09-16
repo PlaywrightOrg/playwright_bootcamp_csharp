@@ -23,6 +23,9 @@ public class MyInfoPageNunit
     private readonly ILocator _tablerows;
 
 
+    private readonly ILocator _emergencyLink;
+
+
     public MyInfoPageNunit(IPage page)  ///here all the locators in the page.
     {
         _page = page;
@@ -57,6 +60,11 @@ public class MyInfoPageNunit
         _saveAttBtn = _page.GetByRole(AriaRole.Button, new() { Name = "Save" }).Nth(2);
 
         _tablerows = _page.Locator(".oxd-table-body .oxd-table-card");
+
+        _emergencyLink = _page.Locator("a[href='/web/index.php/pim/viewEmergencyContacts/empNumber/7']");
+              
+                
+        //_emergencyLink = _page.GetByText("EmergencyContacts");
 
 
 
@@ -102,7 +110,7 @@ public class MyInfoPageNunit
 
     public ILocator tableRows => _tablerows;
 
-
+    public ILocator EmergencyLink => _emergencyLink;    
 
 
 }

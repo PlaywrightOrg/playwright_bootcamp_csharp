@@ -78,8 +78,9 @@ public class NUnitPWA : PageTest //inherits this class very important from nunit
             if (attachmentName == fileName)
             {
 
-
-
+                var deleteBtn = myInfo.tableRows.Nth(i).Locator("button").Nth(1);
+                await deleteBtn.ClickAsync();
+                await Page.PauseAsync();
             }
 
 
@@ -87,7 +88,29 @@ public class NUnitPWA : PageTest //inherits this class very important from nunit
 
         }
 
+        await myInfo.EmergencyLink.ClickAsync();
 
+        var pepe =  Page.GetByRole(AriaRole.Button, new PageGetByRoleOptions { Name = " Add " }).First;
+        await pepe.ClickAsync();
+
+        var input_locator = Page.Locator("xpath=//label[contains(text(), 'Name')]/ancestor::div[contains(@class,'oxd-input-group')]//input");
+        await input_locator.FillAsync("Texto que quieres escribir");
+
+
+        var relationship_locator = Page.Locator("xpath=//label[contains(text(), 'Relationship')]/ancestor::div[contains(@class,'oxd-input-group')]//input");
+        await relationship_locator.FillAsync("test");
+        var hometelephone_locator = Page.Locator("xpath=//label[contains(text(), 'Home Telephone')]/ancestor::div[contains(@class,'oxd-input-group')]//input");
+        await hometelephone_locator.FillAsync("12345");
+
+
+
+
+
+
+
+
+
+        //new PageGetByRoleOptions { Name = " Save " })
 
         await Page.PauseAsync();
 
@@ -98,7 +121,13 @@ public class NUnitPWA : PageTest //inherits this class very important from nunit
         });
         /// adding text to test the push
 
+        /*
+        await page.Locator("form").GetByRole(AriaRole.Textbox).First.ClickAsync();
+        await page.Locator("form").GetByRole(AriaRole.Textbox).First.FillAsync("name");
+        await page.Locator("form").GetByRole(AriaRole.Textbox).Nth(1).ClickAsync();
+        await page.Locator("form").GetByRole(AriaRole.Textbox).Nth(1).FillAsync("relationship");
+        await page.GetByRole(AriaRole.Button, new() { Name = "Save" }).ClickAsync();
 
-
+        */
     }
 }
