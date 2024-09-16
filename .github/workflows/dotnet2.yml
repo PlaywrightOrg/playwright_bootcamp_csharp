@@ -11,28 +11,43 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 8.0.x
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '14' # Specify the Node.js version you are using
-    - name: Install dependencies
-      run: npm install
-    - name: Install Playwright
-      run: dotnet tool install --global Microsoft.Playwright.CLI
-    - name: Install Playwright browsers
-      run: playwright install
-    - name: Restore dependencies
-      run: dotnet restore PlaywrightDemo.sln
-    - name: Build
-      run: dotnet build PlaywrightDemo.sln --no-restore
-    - name: Test
-      run: dotnet test PlaywrightDemo.sln --no-build --verbosity normal
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Install .NET Core SDK
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: '8.x' 
+
+      # Install dependencies Playwright
+      - name: Install Playwright dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxrandr2 libxkbcommon0 libxcomposite1 libxdamage1 libxshmfence1 libgbm1
+
+      # Restore NuGet dependencies
+      - name: Restore NuGet packages
+        run: dotnet restore
+
+      # Compile project
+      - name: Build the project
+        run: dotnet build --configuration Release --no-restore
+
+      # Install Playwright browsers
+      - name: Install Playwright CLI
+        run: dotnet tool install --global Microsoft.Playwright.CLI
+        env:
+          DOTNET_ROOT: /home/runner/.dotnet
+      - name: Install Playwright browsers
+        run: playwright install
+        env:
+          DOTNET_ROOT: /home/runner/.dotnet
+
+      # Executing the tests
+      - name: Run Playwright tests
+        run: dotnet test --configuration Release --no-build
