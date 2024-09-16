@@ -32,7 +32,7 @@ jobs:
 
       # Restore NuGet dependencies
       - name: Restore NuGet packages
-        run: dotnet restore
+        run:  dotnet restore PlaywrightDemo.sln 
 
       # Compile project
       - name: Build the project
@@ -50,4 +50,4 @@ jobs:
 
       # Executing the tests
       - name: Run Playwright tests
-        run: dotnet test --configuration Release --no-build
+        run: dotnet test PlaywrightDemo.sln --configuration Release --no-build
