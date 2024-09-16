@@ -22,4 +22,8 @@
     <Folder Include="Pages\screeshots\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include=".github\workflows\dotnet2.yml" />
+  </ItemGroup>
+
 </Project>
