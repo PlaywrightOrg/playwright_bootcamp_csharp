@@ -38,15 +38,11 @@ jobs:
       - name: Build the project
         run: dotnet build --configuration Release --no-restore PlaywrightDemo.sln 
 
-      # Install Playwright browsers
-      - name: Install Playwright CLI
-        run: dotnet tool install --global Microsoft.Playwright.CLI
-        env:
-          DOTNET_ROOT: /home/runner/.dotnet
+      - name: Install dependencies
+        run: npm install
+            
       - name: Install Playwright browsers
-        run: playwright install PlaywrightDemo.sln
-        env:
-          DOTNET_ROOT: /home/runner/.dotnet
+        run: dotnet tool install --global Microsoft.Playwright.CLI && playwright install
 
       # Executing the tests
       - name: Run Playwright tests
