@@ -20,9 +20,19 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14' # Specify the Node.js version you are using
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore PlaywrightDemo.sln
+    - name: Install dependencies
+      run: npm install
+    - name: Install powershell-devops Module
+      uses: powershell-devops/powershell-devops@v0.2.0
+    - name: Install Playwright browsers
+      run: npx playwright install
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build PlaywrightDemo.sln --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test PlaywrightDemo.sln --no-build --verbosity normal
