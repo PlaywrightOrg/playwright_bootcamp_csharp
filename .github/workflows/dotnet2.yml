@@ -38,8 +38,7 @@ jobs:
       - name: Build the project
         run: dotnet build --configuration Release --no-restore PlaywrightDemo.sln 
 
-      - name: Install dependencies
-        run: npm install
+      
             
       - name: Install Playwright browsers
         run: dotnet tool install --global Microsoft.Playwright.CLI && playwright install
