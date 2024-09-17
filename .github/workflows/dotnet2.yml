@@ -32,22 +32,17 @@ jobs:
 
       # Restore NuGet dependencies
       - name: Restore NuGet packages
-        run:  dotnet restore PlaywrightDemo.sln 
+        run:  dotnet restore PlaywrightDemo.csproj
 
       # Compile project
       - name: Build the project
-        run: dotnet build --configuration Release --no-restore PlaywrightDemo.sln 
+        run: dotnet build --configuration Release --no-restore PlaywrightDemo.csproj 
 
-      # Install Playwright browsers
-      - name: Install Playwright CLI
-        run: dotnet tool install --global Microsoft.Playwright.CLI
-        env:
-          DOTNET_ROOT: /home/runner/.dotnet
+      
+            
       - name: Install Playwright browsers
-        run: playwright install PlaywrightDemo.sln
-        env:
-          DOTNET_ROOT: /home/runner/.dotnet
+        run: dotnet tool install --global Microsoft.Playwright.CLI && playwright install
 
       # Executing the tests
       - name: Run Playwright tests
-        run: dotnet test --configuration Release --no-build PlaywrightDemo.sln
+        run: dotnet test --configuration Release --no-build PlaywrightDemo.csproj
