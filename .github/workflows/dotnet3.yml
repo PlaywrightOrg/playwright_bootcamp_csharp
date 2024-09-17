@@ -18,6 +18,8 @@ jobs:
       run: dotnet restore
     - name: Build & Install
       run: dotnet build
+    - name: Install powershell-devops Module
+      uses: powershell-devops/powershell-devops@v0.2.0
     - name: Install Playwright
       run: dotnet tool restore && dotnet playwright install
     - name: Ensure browsers are installed
