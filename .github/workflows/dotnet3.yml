@@ -32,6 +32,8 @@ jobs:
       uses: powershell-devops/powershell-devops@v0.2.0
     - name: Install Playwright browsers
       run: npx playwright install
+    - name: Ensure browsers are installed
+      run: pwsh ${{ github.workspace }}/bin/Debug/net7.0/playwright.ps1 install --with-deps
     - name: Build
       run: dotnet build PlaywrightDemo.sln --no-restore
     - name: Test
