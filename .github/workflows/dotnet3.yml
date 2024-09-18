@@ -39,8 +39,7 @@ jobs:
       uses: microsoft/playwright-github-action@v1
     - name: Install Playwright browsers
       run: npx playwright install
-    - name: Ensure browsers are installed
-      run: pwsh ${{ github.workspace }}/bin/Debug/net7.0/playwright.ps1 install --with-deps
+    
     - name: Build
       run: dotnet build PlaywrightDemo.sln --no-restore
     - name: Test
