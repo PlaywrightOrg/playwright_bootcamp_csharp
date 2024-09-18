@@ -22,7 +22,7 @@ public class TestDs
         using var playwright = await Playwright.CreateAsync();
         //browser
         //await using var browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
-        await using var browser = await playwright["Firefox"].LaunchAsync(new BrowserTypeLaunchOptions
+        await using var browser = await playwright["Chromium"].LaunchAsync(new BrowserTypeLaunchOptions
         {
             Headless = true,
 
