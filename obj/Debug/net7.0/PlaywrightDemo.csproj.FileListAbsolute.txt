@@ -406,3 +406,7 @@ C:\testing\PlaywrightCsharp\nuevaClauJue\PlaywrightDemo\obj\Debug\net7.0\refint\
 C:\testing\PlaywrightCsharp\nuevaClauJue\PlaywrightDemo\obj\Debug\net7.0\PlaywrightDemo.pdb
 C:\testing\PlaywrightCsharp\nuevaClauJue\PlaywrightDemo\obj\Debug\net7.0\PlaywrightDemo.genruntimeconfig.cache
 C:\testing\PlaywrightCsharp\nuevaClauJue\PlaywrightDemo\obj\Debug\net7.0\ref\PlaywrightDemo.dll
+C:\testing\PlaywrightCsharp\nuevaClauJue\PlaywrightDemo\bin\Debug\net7.0\.playwright\node\darwin-arm64\node
+C:\testing\PlaywrightCsharp\nuevaClauJue\PlaywrightDemo\bin\Debug\net7.0\.playwright\node\darwin-x64\node
+C:\testing\PlaywrightCsharp\nuevaClauJue\PlaywrightDemo\bin\Debug\net7.0\.playwright\node\linux-arm64\node
+C:\testing\PlaywrightCsharp\nuevaClauJue\PlaywrightDemo\bin\Debug\net7.0\.playwright\node\linux-x64\node

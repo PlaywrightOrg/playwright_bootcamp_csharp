@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eoDFPeGee4k2YeZEhpkeCnzy/MBt1jYroSfG8vsW5G/aAhxjQZ/lW/uuT4R5zKqSvYDoQl21JqtzcoQ+Nw95ow==",
+  "dgSpecHash": "r2q2nvWDnqdweDyEVmXoYfRCT+FsOSd4LSCXGyRO3Hk3UAT+HttfFLGVznO5PEsF5U0TBFEJFrzgIb8pxeFqfA==",
   "success": true,
   "projectFilePath": "C:\\testing\\PlaywrightCsharp\\nuevaClauJue\\PlaywrightDemo\\PlaywrightDemo.csproj",
   "expectedPackageFiles": [
@@ -9,9 +9,9 @@
     "C:\\Users\\EV941YM\\.nuget\\packages\\microsoft.codecoverage\\17.7.1\\microsoft.codecoverage.17.7.1.nupkg.sha512",
     "C:\\Users\\EV941YM\\.nuget\\packages\\microsoft.net.test.sdk\\17.7.1\\microsoft.net.test.sdk.17.7.1.nupkg.sha512",
     "C:\\Users\\EV941YM\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\EV941YM\\.nuget\\packages\\microsoft.playwright\\1.45.0\\microsoft.playwright.1.45.0.nupkg.sha512",
-    "C:\\Users\\EV941YM\\.nuget\\packages\\microsoft.playwright.nunit\\1.45.0\\microsoft.playwright.nunit.1.45.0.nupkg.sha512",
-    "C:\\Users\\EV941YM\\.nuget\\packages\\microsoft.playwright.testadapter\\1.45.0\\microsoft.playwright.testadapter.1.45.0.nupkg.sha512",
+    "C:\\Users\\EV941YM\\.nuget\\packages\\microsoft.playwright\\1.47.0\\microsoft.playwright.1.47.0.nupkg.sha512",
+    "C:\\Users\\EV941YM\\.nuget\\packages\\microsoft.playwright.nunit\\1.47.0\\microsoft.playwright.nunit.1.47.0.nupkg.sha512",
+    "C:\\Users\\EV941YM\\.nuget\\packages\\microsoft.playwright.testadapter\\1.47.0\\microsoft.playwright.testadapter.1.47.0.nupkg.sha512",
     "C:\\Users\\EV941YM\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.7.1\\microsoft.testplatform.objectmodel.17.7.1.nupkg.sha512",
     "C:\\Users\\EV941YM\\.nuget\\packages\\microsoft.testplatform.testhost\\17.7.1\\microsoft.testplatform.testhost.17.7.1.nupkg.sha512",
     "C:\\Users\\EV941YM\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
