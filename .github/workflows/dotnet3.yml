@@ -41,6 +41,6 @@ jobs:
       run: npx playwright install
     
     - name: Build
-      run: dotnet build PlaywrightDemo.sln --no-restore
+      run: dotnet build PlaywrightDemo.sln --no-restore 
     - name: Test
-      run: dotnet test PlaywrightDemo.sln --no-build --verbosity normal
+      run: dotnet test PlaywrightDemo.sln --no-build --verbosity normal --settings headed-e2e.runsettings
