@@ -36,11 +36,11 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxrandr2 libxkbcommon0 libxcomposite1 libxdamage1 libxshmfence1 libgbm1
     - name: Install Playwright
-      uses: microsoft/playwright-github-action@v1
+      run: npm install playwright@1.45
     - name: Install Playwright browsers
       run: npx playwright install
     
     - name: Build
-      run: dotnet build PlaywrightDemo.sln --no-restore
+      run: dotnet build PlaywrightDemo.sln --no-restore 
     - name: Test
-      run: dotnet test PlaywrightDemo.sln --no-build --verbosity normal
+      run: dotnet test PlaywrightDemo.sln --no-build --verbosity normal --settings headed-e2e.runsettings
