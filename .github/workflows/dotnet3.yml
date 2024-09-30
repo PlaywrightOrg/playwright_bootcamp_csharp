@@ -36,7 +36,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxrandr2 libxkbcommon0 libxcomposite1 libxdamage1 libxshmfence1 libgbm1
     - name: Install Playwright
-      run: npm install playwright@1.45
+      run: npm install playwright@1.47
     - name: Install Playwright browsers
       run: npx playwright install
     
