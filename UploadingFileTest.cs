@@ -59,7 +59,7 @@ public class NUnitPWA : PageTest //inherits this class very important from nunit
 
         //await myInfo.BrowseAttachments.ClickAsync();
 
-        await myInfo.FileInput.SetInputFilesAsync("C:\\testing\\PlaywrightCsharp\\attachment.txt");
+        await myInfo.FileInput.SetInputFilesAsync("./Files/attachment.txt"); //C:\testing\PlaywrightCsharp\nuevaClauJue\PlaywrightDemo\Files\attachment.txt
 
         var fileName = "attachment.txt";
 
