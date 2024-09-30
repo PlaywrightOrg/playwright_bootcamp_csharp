@@ -106,7 +106,7 @@ public class TestDs
         //browser
         await using var browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
         {
-            Headless = false,
+            Headless = true,
 
         }); //which browser and the mode
         //Page
@@ -188,7 +188,7 @@ public class TestDs
         //browser
         await using var browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
         {
-            Headless = false,
+            Headless = true,
 
         }); //which browser and the mode
         //Page
@@ -250,7 +250,7 @@ public class TestDs
         //browser
         await using var browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
         {
-            Headless = false,
+            Headless = true
 
         }); //which browser and the mode
         //Page
